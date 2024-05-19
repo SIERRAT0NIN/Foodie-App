@@ -136,9 +136,10 @@ export default function CreatePostModal() {
                   value={formik.values.title}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  variant="bordered"
+                  labelPlacement="outside"
+                  variant="underlined"
                   placeholder="Enter the title of your recipe"
-                  disableAnimation
+                  // disableAnimation
                   disableAutosize
                   isRequired
                   classNames={{
@@ -155,9 +156,9 @@ export default function CreatePostModal() {
                   value={formik.values.content}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  variant="bordered"
+                  labelPlacement="outside"
+                  variant="underlined"
                   placeholder="Enter your recipe"
-                  disableAnimation
                   disableAutosize
                   isRequired
                   classNames={{
@@ -170,7 +171,7 @@ export default function CreatePostModal() {
                 ) : null}
               </div>
 
-              <div className="bg-orange-300 p-3 rounded-lg">
+              <div className="glass p-3 rounded-lg">
                 <Input
                   placeholder="Add an ingredient"
                   value={input}
@@ -178,15 +179,15 @@ export default function CreatePostModal() {
                 />
                 <br />
                 <Button
-                  color="default"
-                  className="text-white"
+                  color="primary"
+                  // className="text-white"
                   variant="ghost"
                   onPress={addIngredient}
                 >
                   Add ingredient
                 </Button>
               </div>
-              <div className="bg-blue-300 p-3 rounded-lg">
+              <div className="glass p-3 rounded-lg">
                 <Input
                   placeholder="Add tags"
                   value={inputTag}
@@ -194,8 +195,8 @@ export default function CreatePostModal() {
                 />
                 <br />
                 <Button
-                  color="default"
-                  className="text-white"
+                  color="primary"
+                  // className="text-white"
                   variant="ghost"
                   onPress={addTag}
                 >
